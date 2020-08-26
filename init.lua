@@ -7,7 +7,7 @@ local ScreenSaver = {}
 
 -- Metadata
 ScreenSaver.name="ScreenSaver"
-ScreenSaver.version="0.1"
+ScreenSaver.version="0.2"
 ScreenSaver.author="Von Welch"
 -- https://opensource.org/licenses/Apache-2.0
 ScreenSaver.license="Apache-2.0"
@@ -232,7 +232,8 @@ end
 function ScreenSaver:bindHotKeys(mapping)
   local spec = {
     disable = hs.fnutils.partial(self.disable, self),
-    enable = hs.fnutils.partial(self.enable, self)
+    enable = hs.fnutils.partial(self.enable, self),
+    suspend = hs.fnutils.partial(self.suspend, self)
   }
   hs.spoons.bindHotkeysToSpec(spec, mapping)
   return self
