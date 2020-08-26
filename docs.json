@@ -1,0 +1,550 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Idle timeout in seconds to be used if no value provided.",
+        "stripped_doc" : [
+          "Idle timeout in seconds to be used if no value provided."
+        ],
+        "def" : "ScreenSaver.defaultTimeout",
+        "name" : "defaultTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver.defaultTimeout",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Idle timeout in seconds to be used if no value provided.",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Default time to suspend screensaver for suspend() method. In seconds.",
+        "stripped_doc" : [
+          "Default time to suspend screensaver for suspend() method. In seconds."
+        ],
+        "def" : "ScreenSaver.defaultSuspendTime",
+        "name" : "defaultSuspendTime",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver.defaultSuspendTime",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Default time to suspend screensaver for suspend() method. In seconds.",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Timeout that was in place when disable() called.",
+        "stripped_doc" : [
+          "Timeout that was in place when disable() called."
+        ],
+        "def" : "ScreenSaver.lastTimeout",
+        "name" : "lastTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver.lastTimeout",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Timeout that was in place when disable() called.",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "Control the MacOSX screen saver.",
+    "Field" : [
+
+    ],
+    "Command" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Default time to suspend screensaver for suspend() method. In seconds.",
+        "stripped_doc" : [
+          "Default time to suspend screensaver for suspend() method. In seconds."
+        ],
+        "def" : "ScreenSaver.defaultSuspendTime",
+        "name" : "defaultSuspendTime",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver.defaultSuspendTime",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Default time to suspend screensaver for suspend() method. In seconds.",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Idle timeout in seconds to be used if no value provided.",
+        "stripped_doc" : [
+          "Idle timeout in seconds to be used if no value provided."
+        ],
+        "def" : "ScreenSaver.defaultTimeout",
+        "name" : "defaultTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver.defaultTimeout",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Idle timeout in seconds to be used if no value provided.",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Timeout that was in place when disable() called.",
+        "stripped_doc" : [
+          "Timeout that was in place when disable() called."
+        ],
+        "def" : "ScreenSaver.lastTimeout",
+        "name" : "lastTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver.lastTimeout",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Timeout that was in place when disable() called.",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "The method accepts a single parameter, which is a table. The keys of the table\nare strings that describe the action performed, and the values of the table are\ntables containing modifiers and keynames\/keycodes. E.g.\n  {\n    disable = {{\"cmd\", \"alt\"}, \"d\"},\n    enable = {{\"cmd\", \"alt\"}, \"e\"},\n    suspend = {{\"cmd\", \"alt\"}, \"s\"}\n   }\n\n\nParameters:\n * mapping - Table of action to key mappings\n\nReturns:\n * ScreenSaver object",
+        "stripped_doc" : [
+          "The method accepts a single parameter, which is a table. The keys of the table",
+          "are strings that describe the action performed, and the values of the table are",
+          "tables containing modifiers and keynames\/keycodes. E.g.",
+          "  {",
+          "    disable = {{\"cmd\", \"alt\"}, \"d\"},",
+          "    enable = {{\"cmd\", \"alt\"}, \"e\"},",
+          "    suspend = {{\"cmd\", \"alt\"}, \"s\"}",
+          "   }",
+          "",
+          ""
+        ],
+        "def" : "ScreenSaver:bindHotKeys(table)",
+        "name" : "bindHotKeys",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:bindHotKeys(table)",
+        "type" : "Method",
+        "returns" : [
+          " * ScreenSaver object"
+        ],
+        "desc" : "The method accepts a single parameter, which is a table. The keys of the table",
+        "parameters" : [
+          " * mapping - Table of action to key mappings",
+          ""
+        ]
+      },
+      {
+        "doc" : "Enable or disable debugging\n\nParameters:\n * enable - Boolean indicating whether debugging should be on\n\nReturns:\n * Nothing",
+        "stripped_doc" : [
+          "Enable or disable debugging",
+          ""
+        ],
+        "def" : "ScreenSaver:debug(enable)",
+        "name" : "debug",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:debug(enable)",
+        "type" : "Method",
+        "returns" : [
+          " * Nothing"
+        ],
+        "desc" : "Enable or disable debugging",
+        "parameters" : [
+          " * enable - Boolean indicating whether debugging should be on",
+          ""
+        ]
+      },
+      {
+        "doc" : "Disable the screensaver.\n\nParameters:\n* None\n\nReturns:\n* true on sucess, false on error",
+        "stripped_doc" : [
+          "Disable the screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:disable()",
+        "name" : "disable",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:disable()",
+        "type" : "Method",
+        "returns" : [
+          "* true on sucess, false on error"
+        ],
+        "desc" : "Disable the screensaver.",
+        "parameters" : [
+          "* None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Enable the screensaver.\n\nParameters:\n* idleTimeout (optional): Timeout in seconds. If not provided, then the value\nsaved from the last vall to disable() will be used. If there is no saved value,\nthen ScreenSaver.defaultTimeout will be used. If provided should be one of:\n60, 120, 300, 600, 1200, 1800, 6000\n\nReturns:\n* true on sucess, false on error",
+        "stripped_doc" : [
+          "Enable the screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:enable()",
+        "name" : "enable",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:enable()",
+        "type" : "Method",
+        "returns" : [
+          "* true on sucess, false on error"
+        ],
+        "desc" : "Enable the screensaver.",
+        "parameters" : [
+          "* idleTimeout (optional): Timeout in seconds. If not provided, then the value",
+          "saved from the last vall to disable() will be used. If there is no saved value,",
+          "then ScreenSaver.defaultTimeout will be used. If provided should be one of:",
+          "60, 120, 300, 600, 1200, 1800, 6000",
+          ""
+        ]
+      },
+      {
+        "doc" : "Return the current timeout.\n\nParameters:\n* None\n\nReturns:\n* Current timeout in seconds, nil on error",
+        "stripped_doc" : [
+          "Return the current timeout.",
+          ""
+        ],
+        "def" : "ScreenSaver:getTimeout()",
+        "name" : "getTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:getTimeout()",
+        "type" : "Method",
+        "returns" : [
+          "* Current timeout in seconds, nil on error"
+        ],
+        "desc" : "Return the current timeout.",
+        "parameters" : [
+          "* None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Initializes a ScreenSaver\nWhen a user calls hs.loadSpoon(), Hammerspoon will execute init()\nDo generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.\nin the main scope of your init.lua. Instead, it should simply prepare an object\nwith methods to be used later, then return the object.\n\nParameters:\n * None\n\nReturns:\n * ScreenSaver object",
+        "stripped_doc" : [
+          "Initializes a ScreenSaver",
+          "When a user calls hs.loadSpoon(), Hammerspoon will execute init()",
+          "Do generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.",
+          "in the main scope of your init.lua. Instead, it should simply prepare an object",
+          "with methods to be used later, then return the object.",
+          ""
+        ],
+        "def" : "ScreenSaver:init()",
+        "name" : "init",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:init()",
+        "type" : "Method",
+        "returns" : [
+          " * ScreenSaver object"
+        ],
+        "desc" : "Initializes a ScreenSaver",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Set idle timeout for the screensaver.\nNote that OSX seems to only accept following values for screensaver idle delay:\n60, 120, 300, 600, 1200, 1800, 6000\nAny other values seems to cause the default of 1200 to be used.\nSet to 0 to disable screensaver.\n\nParameters:\n* timeout: Timeout in seconds.\n\nReturns:\n* true on success, false on error.",
+        "stripped_doc" : [
+          "Set idle timeout for the screensaver.",
+          "Note that OSX seems to only accept following values for screensaver idle delay:",
+          "60, 120, 300, 600, 1200, 1800, 6000",
+          "Any other values seems to cause the default of 1200 to be used.",
+          "Set to 0 to disable screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:setTimeout()",
+        "name" : "setTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:setTimeout()",
+        "type" : "Method",
+        "returns" : [
+          "* true on success, false on error."
+        ],
+        "desc" : "Set idle timeout for the screensaver.",
+        "parameters" : [
+          "* timeout: Timeout in seconds.",
+          ""
+        ]
+      },
+      {
+        "doc" : "Suspend the screensaver.\n\nParameters:\n* time (optional): Suspend the screensaver for time in seconds. If not provided,\nsuspends for ScreenSaver.defaultSuspendTime.\n\nReturns:\n* true on sucess, false on error",
+        "stripped_doc" : [
+          "Suspend the screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:suspend()",
+        "name" : "suspend",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:suspend()",
+        "type" : "Method",
+        "returns" : [
+          "* true on sucess, false on error"
+        ],
+        "desc" : "Suspend the screensaver.",
+        "parameters" : [
+          "* time (optional): Suspend the screensaver for time in seconds. If not provided,",
+          "suspends for ScreenSaver.defaultSuspendTime.",
+          ""
+        ]
+      }
+    ],
+    "Method" : [
+      {
+        "doc" : "Enable or disable debugging\n\nParameters:\n * enable - Boolean indicating whether debugging should be on\n\nReturns:\n * Nothing",
+        "stripped_doc" : [
+          "Enable or disable debugging",
+          ""
+        ],
+        "def" : "ScreenSaver:debug(enable)",
+        "name" : "debug",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:debug(enable)",
+        "type" : "Method",
+        "returns" : [
+          " * Nothing"
+        ],
+        "desc" : "Enable or disable debugging",
+        "parameters" : [
+          " * enable - Boolean indicating whether debugging should be on",
+          ""
+        ]
+      },
+      {
+        "doc" : "Initializes a ScreenSaver\nWhen a user calls hs.loadSpoon(), Hammerspoon will execute init()\nDo generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.\nin the main scope of your init.lua. Instead, it should simply prepare an object\nwith methods to be used later, then return the object.\n\nParameters:\n * None\n\nReturns:\n * ScreenSaver object",
+        "stripped_doc" : [
+          "Initializes a ScreenSaver",
+          "When a user calls hs.loadSpoon(), Hammerspoon will execute init()",
+          "Do generally not perform any work, map any hotkeys, start any timers\/watchers\/etc.",
+          "in the main scope of your init.lua. Instead, it should simply prepare an object",
+          "with methods to be used later, then return the object.",
+          ""
+        ],
+        "def" : "ScreenSaver:init()",
+        "name" : "init",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:init()",
+        "type" : "Method",
+        "returns" : [
+          " * ScreenSaver object"
+        ],
+        "desc" : "Initializes a ScreenSaver",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Disable the screensaver.\n\nParameters:\n* None\n\nReturns:\n* true on sucess, false on error",
+        "stripped_doc" : [
+          "Disable the screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:disable()",
+        "name" : "disable",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:disable()",
+        "type" : "Method",
+        "returns" : [
+          "* true on sucess, false on error"
+        ],
+        "desc" : "Disable the screensaver.",
+        "parameters" : [
+          "* None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Enable the screensaver.\n\nParameters:\n* idleTimeout (optional): Timeout in seconds. If not provided, then the value\nsaved from the last vall to disable() will be used. If there is no saved value,\nthen ScreenSaver.defaultTimeout will be used. If provided should be one of:\n60, 120, 300, 600, 1200, 1800, 6000\n\nReturns:\n* true on sucess, false on error",
+        "stripped_doc" : [
+          "Enable the screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:enable()",
+        "name" : "enable",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:enable()",
+        "type" : "Method",
+        "returns" : [
+          "* true on sucess, false on error"
+        ],
+        "desc" : "Enable the screensaver.",
+        "parameters" : [
+          "* idleTimeout (optional): Timeout in seconds. If not provided, then the value",
+          "saved from the last vall to disable() will be used. If there is no saved value,",
+          "then ScreenSaver.defaultTimeout will be used. If provided should be one of:",
+          "60, 120, 300, 600, 1200, 1800, 6000",
+          ""
+        ]
+      },
+      {
+        "doc" : "Suspend the screensaver.\n\nParameters:\n* time (optional): Suspend the screensaver for time in seconds. If not provided,\nsuspends for ScreenSaver.defaultSuspendTime.\n\nReturns:\n* true on sucess, false on error",
+        "stripped_doc" : [
+          "Suspend the screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:suspend()",
+        "name" : "suspend",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:suspend()",
+        "type" : "Method",
+        "returns" : [
+          "* true on sucess, false on error"
+        ],
+        "desc" : "Suspend the screensaver.",
+        "parameters" : [
+          "* time (optional): Suspend the screensaver for time in seconds. If not provided,",
+          "suspends for ScreenSaver.defaultSuspendTime.",
+          ""
+        ]
+      },
+      {
+        "doc" : "Return the current timeout.\n\nParameters:\n* None\n\nReturns:\n* Current timeout in seconds, nil on error",
+        "stripped_doc" : [
+          "Return the current timeout.",
+          ""
+        ],
+        "def" : "ScreenSaver:getTimeout()",
+        "name" : "getTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:getTimeout()",
+        "type" : "Method",
+        "returns" : [
+          "* Current timeout in seconds, nil on error"
+        ],
+        "desc" : "Return the current timeout.",
+        "parameters" : [
+          "* None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Set idle timeout for the screensaver.\nNote that OSX seems to only accept following values for screensaver idle delay:\n60, 120, 300, 600, 1200, 1800, 6000\nAny other values seems to cause the default of 1200 to be used.\nSet to 0 to disable screensaver.\n\nParameters:\n* timeout: Timeout in seconds.\n\nReturns:\n* true on success, false on error.",
+        "stripped_doc" : [
+          "Set idle timeout for the screensaver.",
+          "Note that OSX seems to only accept following values for screensaver idle delay:",
+          "60, 120, 300, 600, 1200, 1800, 6000",
+          "Any other values seems to cause the default of 1200 to be used.",
+          "Set to 0 to disable screensaver.",
+          ""
+        ],
+        "def" : "ScreenSaver:setTimeout()",
+        "name" : "setTimeout",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:setTimeout()",
+        "type" : "Method",
+        "returns" : [
+          "* true on success, false on error."
+        ],
+        "desc" : "Set idle timeout for the screensaver.",
+        "parameters" : [
+          "* timeout: Timeout in seconds.",
+          ""
+        ]
+      },
+      {
+        "doc" : "The method accepts a single parameter, which is a table. The keys of the table\nare strings that describe the action performed, and the values of the table are\ntables containing modifiers and keynames\/keycodes. E.g.\n  {\n    disable = {{\"cmd\", \"alt\"}, \"d\"},\n    enable = {{\"cmd\", \"alt\"}, \"e\"},\n    suspend = {{\"cmd\", \"alt\"}, \"s\"}\n   }\n\n\nParameters:\n * mapping - Table of action to key mappings\n\nReturns:\n * ScreenSaver object",
+        "stripped_doc" : [
+          "The method accepts a single parameter, which is a table. The keys of the table",
+          "are strings that describe the action performed, and the values of the table are",
+          "tables containing modifiers and keynames\/keycodes. E.g.",
+          "  {",
+          "    disable = {{\"cmd\", \"alt\"}, \"d\"},",
+          "    enable = {{\"cmd\", \"alt\"}, \"e\"},",
+          "    suspend = {{\"cmd\", \"alt\"}, \"s\"}",
+          "   }",
+          "",
+          ""
+        ],
+        "def" : "ScreenSaver:bindHotKeys(table)",
+        "name" : "bindHotKeys",
+        "notes" : [
+
+        ],
+        "signature" : "ScreenSaver:bindHotKeys(table)",
+        "type" : "Method",
+        "returns" : [
+          " * ScreenSaver object"
+        ],
+        "desc" : "The method accepts a single parameter, which is a table. The keys of the table",
+        "parameters" : [
+          " * mapping - Table of action to key mappings",
+          ""
+        ]
+      }
+    ],
+    "name" : "ScreenSaver"
+  }
+]
