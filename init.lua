@@ -33,7 +33,7 @@ ScreenSaver.defaultSuspendTime = 3600
 ScreenSaver.lastTimeout = nil
 
 --- ScreenSaver:debug(enable)
---- Method
+--- Function
 --- Enable or disable debugging
 ---
 --- Parameters:
@@ -53,12 +53,8 @@ end
 
 
 --- ScreenSaver:init()
---- Method
+--- Function
 --- Initializes a ScreenSaver
---- When a user calls hs.loadSpoon(), Hammerspoon will execute init()
---- Do generally not perform any work, map any hotkeys, start any timers/watchers/etc.
---- in the main scope of your init.lua. Instead, it should simply prepare an object
---- with methods to be used later, then return the object.
 ---
 --- Parameters:
 ---  * None
@@ -81,7 +77,7 @@ function ScreenSaver:init()
 end
 
 --- ScreenSaver:disable()
---- Method
+--- Function
 --- Disable the screensaver.
 ---
 --- Parameters:
@@ -101,7 +97,7 @@ function ScreenSaver:disable()
 end
 
 --- ScreenSaver:enable()
---- Method
+--- Function
 --- Enable the screensaver.
 ---
 --- Parameters:
@@ -124,7 +120,7 @@ function ScreenSaver:enable(timeout)
 end
 
 --- ScreenSaver:suspend()
---- Method
+--- Function
 --- Suspend the screensaver.
 ---
 --- Parameters:
@@ -149,7 +145,7 @@ function ScreenSaver:suspend(time)
 end
 
 --- ScreenSaver:getTimeout()
---- Method
+--- Function
 --- Return the current timeout.
 ---
 --- Parameters:
@@ -173,7 +169,7 @@ function ScreenSaver:getTimeout()
 end
 
 --- ScreenSaver:setTimeout()
---- Method
+--- Function
 --- Set idle timeout for the screensaver.
 --- Note that OSX seems to only accept following values for screensaver idle delay:
 --- 60, 120, 300, 600, 1200, 1800, 6000
@@ -212,7 +208,7 @@ function ScreenSaver:setTimeout(timeout)
 end
 
 --- ScreenSaver:bindHotKeys(table)
---- Method
+--- Function
 --- The method accepts a single parameter, which is a table. The keys of the table
 --- are strings that describe the action performed, and the values of the table are
 --- tables containing modifiers and keynames/keycodes. E.g.
