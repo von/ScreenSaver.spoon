@@ -1,0 +1,73 @@
+[
+  {
+    "desc": "",
+    "name": "ScreenSaver",
+    "type": "Module"
+  },
+  {
+    "desc": "Default time to suspend screensaver for suspend() method. In seconds.",
+    "module": "ScreenSaver",
+    "name": "defaultSuspendTime",
+    "type": "Variable"
+  },
+  {
+    "desc": "Idle timeout in seconds to be used if no value provided.",
+    "module": "ScreenSaver",
+    "name": "defaultTimeout",
+    "type": "Variable"
+  },
+  {
+    "desc": "Timeout that was in place when disable() called.",
+    "module": "ScreenSaver",
+    "name": "lastTimeout",
+    "type": "Variable"
+  },
+  {
+    "desc": "The method accepts a single parameter, which is a table. The keys of the table",
+    "module": "ScreenSaver",
+    "name": "bindHotKeys",
+    "type": "Function"
+  },
+  {
+    "desc": "Enable or disable debugging",
+    "module": "ScreenSaver",
+    "name": "debug",
+    "type": "Function"
+  },
+  {
+    "desc": "Disable the screensaver.",
+    "module": "ScreenSaver",
+    "name": "disable",
+    "type": "Function"
+  },
+  {
+    "desc": "Enable the screensaver.",
+    "module": "ScreenSaver",
+    "name": "enable",
+    "type": "Function"
+  },
+  {
+    "desc": "Return the current timeout.",
+    "module": "ScreenSaver",
+    "name": "getTimeout",
+    "type": "Function"
+  },
+  {
+    "desc": "Initializes a ScreenSaver",
+    "module": "ScreenSaver",
+    "name": "init",
+    "type": "Function"
+  },
+  {
+    "desc": "Set idle timeout for the screensaver.",
+    "module": "ScreenSaver",
+    "name": "setTimeout",
+    "type": "Function"
+  },
+  {
+    "desc": "Suspend the screensaver.",
+    "module": "ScreenSaver",
+    "name": "suspend",
+    "type": "Function"
+  }
+]
